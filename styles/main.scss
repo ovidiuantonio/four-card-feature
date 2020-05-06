@@ -12,6 +12,10 @@ body {
   font-family: "Poppins", sans-serif;
   padding: 8rem 10rem;
   background-color: hsl(0, 0%, 98%);
+
+  @media only screen and (max-width: 600px) {
+    padding: 4rem 4rem;
+  }
 }
 
 .text {
@@ -36,6 +40,14 @@ body {
   width: 40%;
   margin: 0 auto;
   margin-top: 1rem;
+
+  @media only screen and (max-width: 900px) {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 80%;
+  }
 }
 
 .cards {
@@ -46,6 +58,10 @@ body {
 
   @media only screen and (max-width: 900px) {
     height: auto;
+  }
+
+  @media only screen and (max-width: 600px) {
+    padding: 5rem 0;
   }
 
   @media only screen and (min-width: 2000px) {
@@ -142,7 +158,23 @@ body {
       &-2,
       &-3,
       &-4 {
-        width: 40vw;
+        width: 30vw;
+        margin: auto;
+        margin-bottom: 5rem;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    & {
+      position: static;
+      transform: translateX(0);
+
+      &-1,
+      &-2,
+      &-3,
+      &-4 {
+        width: 60vw;
         margin: auto;
         margin-bottom: 5rem;
       }
